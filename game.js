@@ -50,7 +50,7 @@ getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     return window.location.assign("/end.html");
   }
-    
+  
   questionCounter++;
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
   currentQuestion = availableQuesions[questionIndex];
@@ -84,4 +84,5 @@ choices.forEach(choice => {
     }, 1000);
   });
 });
+
 startGame();
