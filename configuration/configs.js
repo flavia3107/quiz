@@ -126,7 +126,7 @@ const categories = [
     }
 ];
 
-const levels = ['easy', 'medium', 'difficult'];
+const levels = [null, 'easy', 'medium', 'difficult'];
 
 const type = ['multiple', 'boolean'];
 

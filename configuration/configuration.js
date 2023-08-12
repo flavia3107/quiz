@@ -1,7 +1,7 @@
 const categoryList = document.getElementById('category');
 const navigateNext = document.getElementById('navigate-next');
 navigateNext.addEventListener('click', () => {
-    return window.location.assign('../game/game.html');
+    return window.location.assign('../difficulty/difficulty.html');
 });
 navigateNext.disabled = true;
 
@@ -9,7 +9,7 @@ function appendCategories() {
     categories.forEach(category => {
         const optionElement = document.createElement("li");
         optionElement.addEventListener('click', clickHandler);
-        optionElement.value = `${category.id}`;
+        optionElement['data-value'] = `${category.id}`;
         optionElement.classList = 'category-item grid-item';
         optionElement.innerHTML = `
         <i class="${category.icon}"></i>
@@ -20,9 +20,8 @@ function appendCategories() {
 }
 
 function clickHandler() {
-    const selectedCategory = this.value === 0 ? null : this.value;
+    const selectedCategory = this['data-value'] === 0 ? null : this['data-value'];
     params.category = selectedCategory ? `category=${selectedCategory}&` : '';
-
     document.querySelectorAll('.category-item')
         .forEach(option => option.classList.remove('selected'));
     this.classList.add('selected');
