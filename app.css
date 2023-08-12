@@ -1,6 +1,12 @@
 :root {
   background-color: #ecf5ff;
   font-size: 62.5%;
+  --primary-color: #000000;
+  --font-size-medium: 16px;
+  --card-color: #c7e7f54a;
+  --body-background: #f9f9f9;
+  --font-color: #000000;
+  --hover: #383838;
 }
 
 * {
@@ -9,6 +15,11 @@
   margin: 0;
   padding: 0;
   color: #333;
+}
+
+body {
+  margin: 0;
+  height: calc(100% - 100px);
 }
 
 h1,
@@ -123,4 +134,78 @@ input {
 
 input::placeholder {
   color: #aaa;
+}
+
+/* NAVIGATION */
+
+.navigation-body {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+}
+
+.navigation-body a span,
+.navigation-body i {
+  color: white;
+}
+
+.title-name {
+  font-size: 1.3rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-transform: capitalize;
+  color: white;
+}
+
+.name,
+.sign {
+  margin-top: 0;
+}
+
+.main-title {
+  text-align: start;
+  margin: 1.6rem 0 0.5rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 35px;
+}
+
+.logo-txt {
+  padding-left: 7px;
+  display: flex;
+  flex-direction: column;
+  color: var(--heading-color);
+}
+
+.logo-txt h1,
+.logo-txt span {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  letter-spacing: 4px;
+  text-align: start;
+  color: #fff;
+}
+
+.logo-txt h1 {
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin-top: 2px;
+}
+
+.logo-txt span {
+  opacity: 0.8;
+  font-size: 0.85rem;
 }
