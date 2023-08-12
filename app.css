@@ -195,3 +195,23 @@ footer {
   align-items: center;
   padding: 1rem 3rem;
 }
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  height: 9px;
+  width: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  width: 9px;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

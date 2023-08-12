@@ -1,5 +1,8 @@
 const categoryList = document.getElementById('category');
 const navigateNext = document.getElementById('navigate-next');
+navigateNext.addEventListener('click', () => {
+    return window.location.assign('../game/game.html');
+});
 navigateNext.disabled = true;
 
 function appendCategories() {
