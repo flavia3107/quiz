@@ -4,13 +4,10 @@ ul {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1rem;
-    max-width: 120rem;
+    max-width: 57rem;
     margin: 0 auto;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid #ccc;
 }
 
 .grid-item {
@@ -18,18 +15,34 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    background-color: #2196f3;
+    font-size: 1rem;
+    background-color: var(--card-color);
     color: white;
     border-radius: 5px;
-    height: 15rem;
+    height: 140px;
     cursor: pointer;
 }
 
 .grid-item:hover {
-    background-color: #85bfee;
+    background-color: #95b2c1;
+    color: white;
 }
 
+.category-item i {
+    padding: 1rem;
+    background: #ffffff73;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    margin: 1rem;
+    color: #7794a2;
+}
+
+.category-name {
+    color: #92b0be;
+    font-size: 0.9rem;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+}
 /* @media screen and (max-width: 670px) {
     .grid-container {
         grid-template-columns: auto auto;
