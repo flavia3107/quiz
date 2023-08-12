@@ -129,3 +129,5 @@ const categories = [
 const levels = ['easy', 'medium', 'difficult'];
 
 const type = ['multiple', 'boolean'];
+
+let url = '';

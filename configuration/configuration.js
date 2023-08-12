@@ -1,11 +1,17 @@
-console.log('config', categories);
-
+let selectedCategory = null;
+let params = {
+    category: null,
+    difficulty: 'difficulty=easy',
+    type: 'type=multiple',
+    amount: 'amount=10'
+}
 const categoryList = document.getElementById('category');
 
 
 function appendCategories() {
     categories.forEach(category => {
         const optionElement = document.createElement("li");
+        optionElement.addEventListener('click', clickHandler);
         // optionElement.text = `${category.name}`;
         optionElement.value = `${category.id}`;
         optionElement.classList = 'category-item grid-item';
@@ -17,6 +23,14 @@ function appendCategories() {
     });
 }
 
-
+function clickHandler() {
+    document.querySelectorAll('.category-item')
+        .forEach(option => option.classList.remove('selected'));
+    selectedCategory = this.value === 0 ? null : this.value;
+    params.category = this.value ? `category=${this.value}&` : '';
+    this.classList.add('selected');
+    url = `https://opentdb.com/api.php?${params.amount}&${params.category}${params.difficulty}&${params.type}`;
+    console.log('url', url)
+}
 
 appendCategories();

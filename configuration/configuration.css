@@ -23,11 +23,6 @@ ul {
     cursor: pointer;
 }
 
-.grid-item:hover {
-    background-color: #95b2c1;
-    color: white;
-}
-
 .category-item i {
     padding: 1rem;
     background: #ffffff73;
@@ -42,6 +37,26 @@ ul {
     font-size: 0.9rem;
     letter-spacing: 1.1px;
     font-weight: 600;
+}
+
+.grid-item:hover,
+.selected {
+    background-color: #95b2c1;
+}
+
+.grid-item:hover i,
+.selected i {
+    background-color: #fff;
+}
+
+.grid-item:hover .category-name,
+.selected .category-name {
+    color: white;
+}
+
+main {
+    overflow-y: auto;
+    flex: 1;
 }
 /* @media screen and (max-width: 670px) {
     .grid-container {
