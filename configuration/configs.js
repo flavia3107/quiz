@@ -130,4 +130,11 @@ const levels = ['easy', 'medium', 'difficult'];
 
 const type = ['multiple', 'boolean'];
 
+let params = {
+    category: null,
+    difficulty: 'difficulty=easy',
+    type: 'type=multiple',
+    amount: 'amount=10'
+}
+
 let url = '';

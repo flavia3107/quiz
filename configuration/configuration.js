@@ -1,10 +1,5 @@
 let selectedCategory = null;
-let params = {
-    category: null,
-    difficulty: 'difficulty=easy',
-    type: 'type=multiple',
-    amount: 'amount=10'
-}
+
 const categoryList = document.getElementById('category');
 
 
