@@ -44,6 +44,11 @@ ul {
 .grid-item:hover,
 .selected {
     background-color: #95b2c1;
+    border-color: transparent;
+}
+
+.selected {
+    border-color: #8ba8b7;
 }
 
 .grid-item:hover i,

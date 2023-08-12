@@ -1,8 +1,14 @@
 const difficultyList = document.getElementById('difficulty-container');
 const navigateNext = document.getElementById('navigate-next-play');
+const navigatePrevious = document.getElementById('navigate-previous');
+
 navigateNext.addEventListener('click', () => {
     return window.location.assign('../game/game.html');
 });
+navigatePrevious.addEventListener('click', () => {
+    return window.location.assign('../configuration/configuration.html');
+});
+
 navigateNext.disabled = true;
 
 function appendDifficultyLevels() {
@@ -26,6 +32,5 @@ function clickHandler() {
     this.classList.add('selected');
     navigateNext.disabled = false;
 }
-
 
 appendDifficultyLevels();
