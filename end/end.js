@@ -25,7 +25,5 @@ saveHighScore = (e) => {
     highScores.splice(5);
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
-    const path = window.location.host.includes('github') ? '/quiz' : '/';
-    console.log('path', path, window.location)
-    window.location.assign(path);
+    window.location.assign('/');
 };
