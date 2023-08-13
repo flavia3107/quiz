@@ -37,11 +37,15 @@ main {
 }
 
 .correct {
-  background-color: #28a745;
+  background-color: #c6ffd3;
+  color: #61976d;
+  border-color: #cfeedf;
 }
 
 .incorrect {
-  background-color: #dc3545;
+  background-color: #fc9ca5;
+  color: #b0545d;
+  border-color: #dd8d95;
 }
 
 #question {
@@ -91,9 +95,10 @@ main {
 #loader {
   border: 1.6rem solid white;
   border-radius: 50%;
-  border-top: 1.6rem solid #56a5eb;
+  border-top: 1.6rem solid #92b0be;
   width: 12rem;
   height: 12rem;
+  margin: auto;
   animation: spin 2s linear infinite;
 }
 
