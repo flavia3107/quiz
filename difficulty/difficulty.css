@@ -16,7 +16,6 @@ ul {
 
 .difficulty-item {
     padding: 1rem 7rem;
-    border-radius: 6px;
     text-transform: capitalize;
     background-color: var(--card-color);
     border-radius: 5px;
