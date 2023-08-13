@@ -40,12 +40,6 @@ ul {
     border-color: #8ba8b7;
 }
 
-.previous {
-    border: 1px solid #95b2c1;
-    background-color: transparent;
-    color: #95b2c1;
-}
-
 footer {
     justify-content: space-between;
 }

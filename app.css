@@ -70,16 +70,15 @@ body {
   padding: 1rem 0;
   width: 20rem;
   text-align: center;
-  border: 0.1rem solid #56a5eb;
+  border: 0.1rem solid;
   margin-bottom: 1rem;
   text-decoration: none;
-  color: #56a5eb;
-  background-color: white;
+  border-radius: 4px;
 }
 
 .btn:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  box-shadow: 0 0.4rem 1.4rem 0 #9eafb780;
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
@@ -88,6 +87,24 @@ body {
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
+}
+
+.primary {
+  background-color: #95b2c1;
+  color: white;
+  border-color: #8ba8b7;
+}
+
+.secondary {
+  border: 1px solid #95b2c1;
+  background-color: transparent;
+  color: #95b2c1;
+}
+
+.page-title {
+  color: #7b94a1;
+  line-height: 5rem;
+  letter-spacing: 0.5px;
 }
 
 /* FORMS */
