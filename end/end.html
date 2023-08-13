@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Congrats!</title>
     <link rel="stylesheet" href="../app.css" />
+    <link rel="stylesheet" href="end.css" />
+
     <script src="https://kit.fontawesome.com/1f73255471.js" crossorigin="anonymous"></script>
 </head>
 
@@ -27,19 +29,19 @@
             <i class="fa-solid fa-house"></i>
         </a>
     </header>
-    <div class="container">
+    <main>
         <div id="end" class="flex-center flex-column">
-            <h1 id="finalScore"></h1>
+            <h1 class="page-title" id="finalScore"></h1>
             <form>
                 <input type="text" name="username" id="username" placeholder="username" />
-                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
+                <button type="submit" class="btn primary" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
                     Save
                 </button>
             </form>
-            <a class="btn" href="../game/game.html">Play Again</a>
-            <a class="btn" href="/">Go Home</a>
+            <a class="btn primary" href="../game/game.html">Play Again</a>
+            <a class="btn secondary" href="/">Go Home</a>
         </div>
-    </div>
+    </main>
     <script src="end.js"></script>
 </body>
 
