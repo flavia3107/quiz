@@ -61,11 +61,6 @@ ul {
     color: white;
 }
 
-main {
-    overflow-y: auto;
-    flex: 1;
-}
-
 /* @media screen and (max-width: 670px) {
     .grid-container {
         grid-template-columns: auto auto;
