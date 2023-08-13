@@ -1,6 +1,6 @@
 const categories = [
     {
-        id: null,
+        id: '',
         name: 'Any',
         icon: 'fa-solid fa-layer-group'
     },
@@ -126,15 +126,15 @@ const categories = [
     }
 ];
 
-const levels = [null, 'easy', 'medium', 'difficult'];
+const levels = ['', 'easy', 'medium', 'difficult'];
 
 const type = ['multiple', 'boolean'];
 
 let params = {
-    category: null,
-    difficulty: 'difficulty=easy',
-    type: 'type=multiple',
-    amount: 'amount=10'
+    category: '',
+    difficulty: '',
+    type: '&type=multiple',
+    amount: 'amount=20'
 }
 
 let url = '';

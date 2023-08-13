@@ -20,13 +20,12 @@ function appendCategories() {
 }
 
 function clickHandler() {
-    const selectedCategory = this['data-value'] === 0 ? null : this['data-value'];
-    params.category = selectedCategory ? `category=${selectedCategory}&` : '';
+    params.category = !!this['data-value'] ? `&category=${this['data-value']}` : '';
     document.querySelectorAll('.category-item')
         .forEach(option => option.classList.remove('selected'));
     this.classList.add('selected');
     navigateNext.disabled = false;
-    url = `https://opentdb.com/api.php?${params.amount}&${params.category}${params.difficulty}&${params.type}`;
+    localStorage.setItem('config', JSON.stringify(params));
 }
 
 appendCategories();

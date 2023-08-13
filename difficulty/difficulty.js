@@ -12,6 +12,7 @@ navigatePrevious.addEventListener('click', () => {
 navigateNext.disabled = true;
 
 function appendDifficultyLevels() {
+    params = JSON.parse(localStorage.getItem('config'));
     levels.forEach(level => {
         const optionElement = document.createElement("li");
         optionElement.addEventListener('click', clickHandler);
@@ -23,14 +24,12 @@ function appendDifficultyLevels() {
 }
 
 function clickHandler() {
-    const selectedCategory = this['data-value'];
-    params.difficulty = selectedCategory ? `&difficulty=${selectedCategory}` : '';
-    console.log(params)
-
+    params.difficulty = !!this['data-value'] ? `&difficulty=${this['data-value']}` : '';
     document.querySelectorAll('.difficulty-item')
         .forEach(option => option.classList.remove('selected'));
     this.classList.add('selected');
     navigateNext.disabled = false;
+    localStorage.setItem('config', JSON.stringify(params));
 }
 
 appendDifficultyLevels();

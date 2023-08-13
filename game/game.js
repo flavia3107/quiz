@@ -12,9 +12,10 @@ let questionCounter = 0;
 let availableQuesions = [];
 
 let questions = [];
+const config = JSON.parse(localStorage.getItem('config'));
 
 fetch(
-    'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple'
+    `https://opentdb.com/api.php?${config.amount}${config.category}${config.difficulty}${config.type}`
 )
     .then((res) => {
         return res.json();
@@ -48,7 +49,7 @@ fetch(
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 10;
+const MAX_QUESTIONS = 20;
 
 startGame = () => {
     questionCounter = 0;
