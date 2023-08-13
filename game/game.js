@@ -76,11 +76,13 @@ getNewQuestion = () => {
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
-    question.innerText = currentQuestion.question;
+
+    const parser = new DOMParser();
+    question.textContent = parser.parseFromString(currentQuestion.question, 'text/html').body.textContent;
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + number];
+        choice.innerText = parser.parseFromString(currentQuestion['choice' + number], 'text/html').body.textContent;
     });
 
     availableQuesions.splice(questionIndex, 1);
