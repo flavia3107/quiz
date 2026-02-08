@@ -38,10 +38,3 @@ Through its intuitive interface and engaging features, users can seamlessly part
 
 ## 🚀 Live Demo
 [Demo](https://flavia3107.github.io/quiz/)
-
----
-
-## 🎖️ Credits
-
-This is a **personal project** developed as part of my ongoing web development course.  
-It aims to provide an **interactive and educational platform** for users to challenge themselves and expand their knowledge.
