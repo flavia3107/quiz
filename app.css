@@ -48,6 +48,9 @@ footer {
   position: sticky;
   bottom: 0;
   background-color: var(--body-background);
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 2rem;
 }
 #home {
   height: 100%;
