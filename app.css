@@ -189,3 +189,22 @@ a {
   margin: 0.5rem;
   width: fit-content;
 }
+
+::-webkit-scrollbar {
+  height: 0.563rem;
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c7e7f5;
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
